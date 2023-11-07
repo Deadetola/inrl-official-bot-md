@@ -5,7 +5,7 @@ if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'//2.5
 const DB_URL =  process.env.DATABASE_URL || '';
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'inrl~e2b25Da885ad2ac08814768c293cc2098809', //your ssid to run bot
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME
@@ -33,7 +33,7 @@ module.exports = {
     AUTO_CHAT_GRP : toBool(process.env.AUTO_CHAT_GRP || "false"),
     WARNCOUND : process.env.WARNCOUND || 5,
     AUTO_BIO : process.env.AUTO_BIO || "false",
-    ALIVE_DATA : process.env.ALIVE_DATA || "_iam alive now &sender_",
+    ALIVE_DATA : process.env.ALIVE_DATA || "_lemme is active &sender_",
     BOT_INFO : process.env.BOT_INFO || "INRL-BOT-MD;INRL;https://i.imgur.com/DyLAuEh.jpg",
     WORKTYPE : process.env.WORKTYPE || "private",
     PREFIX : process.env.PREFIX || "[.,!]",
